@@ -1,0 +1,64 @@
+# TA Ops Audit Automation System - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core AI/ML
+anthropic>=0.18.0           # Claude API for AI agents
+openai>=1.0.0              # Optional: for comparison or fallback
+
+# PDF Processing
+PyPDF2>=3.0.0              # PDF reading and text extraction
+pdfplumber>=0.10.0         # Alternative PDF parser (more robust)
+pypdf>=3.17.0              # Modern PDF handling
+
+# Document Generation
+python-docx>=1.1.0         # Create and modify Word documents
+reportlab>=4.0.0           # PDF generation (if needed)
+
+# Excel/Data Processing
+openpyxl>=3.1.0            # Read/write Excel files
+pandas>=2.0.0              # Data manipulation (optional but useful)
+xlrd>=2.0.1                # Read old Excel formats
+
+# SharePoint Integration
+office365-rest-python-client>=2.5.0  # SharePoint REST API
+msal>=1.25.0                         # Microsoft Authentication Library
+
+# Configuration & Utilities
+pyyaml>=6.0                # YAML configuration files
+python-dotenv>=1.0.0       # Environment variable management
+configparser>=6.0.0        # INI file parsing
+
+# HTTP & API
+requests>=2.31.0           # HTTP requests
+urllib3>=2.0.0             # URL handling
+
+# Logging & Monitoring
+loguru>=0.7.0              # Enhanced logging (optional)
+python-json-logger>=2.0.0  # JSON logging format
+
+# Date/Time
+python-dateutil>=2.8.0     # Date parsing and manipulation
+pytz>=2023.3               # Timezone support
+
+# Testing (Optional)
+pytest>=7.4.0              # Unit testing framework
+pytest-cov>=4.1.0          # Coverage reporting
+pytest-mock>=3.12.0        # Mocking for tests
+
+# Code Quality (Optional)
+black>=23.0.0              # Code formatting
+flake8>=6.1.0              # Linting
+mypy>=1.7.0                # Type checking
+
+# Production Deployment (Optional)
+gunicorn>=21.2.0           # WSGI server (if building API)
+celery>=5.3.0              # Task queue (for async processing)
+redis>=5.0.0               # Cache and message broker
+
+# Monitoring (Optional)
+sentry-sdk>=1.38.0         # Error tracking
+prometheus-client>=0.19.0  # Metrics collection
+
+# Documentation (Optional)
+sphinx>=7.2.0              # Documentation generation
+mkdocs>=1.5.0              # Markdown documentation
